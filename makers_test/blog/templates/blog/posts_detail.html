@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ post.title }}</title>
+</head>
+<body>
+    <h1>{{ post.title }}</h1><br>
+    <p>{{ post.text}} </p><br>
+    {% if post.image %} <img width="400" height="400" src="{{}}">{% endif %}
+    <p>Опубликованно: {{ pos.creation_date}}</p>
+
+</body>
+</html>

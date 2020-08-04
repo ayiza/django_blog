@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Our blog</title>
+</head>
+<body>
+    <h1> Our shiny blog</h1>
+    {% for category in catigoreis_list%}
+<!--    posts/?catgory=catygory_slug-->
+
+    <a href="{% url 'posts-list' %}?category={{category.slug}}">{{category.name}}</a>
+    {% endfor %}
+</body>
+</html>
